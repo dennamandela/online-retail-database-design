@@ -38,6 +38,7 @@ Langkah - langkah perancangan database online retail:
 3. Relationship
 
 4. ERD (Entity Relationship Diagram) Online Retail
+
 ![erd_online-retail](/OnlineRetail.jpg)
 
 
