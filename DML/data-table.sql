@@ -53,19 +53,19 @@ insert into product (nama_barang, sku, deskripsi, harga, stok, supplier_id, cate
 ('Sarimi', 'OMHAIMI', 'Sarimi Mie Gelas 30gr (1 Renceng isi 10 pcs) - Soto Ayam', 10000, 30, 7, 1);
 
 -- data transaksi --
-insert into transaction (tanggal_transaksi, keterangan, customer_id, product_id) values
-('2022-10-01', 'belum bayar', 1, 9),
-('2022-10-01', 'packing harus rapih', 1, 5),
-('2022-10-01', 'mohon segera dikirim ya', 4, 9),
-('2022-10-01', 'jangan lupa packing harus aman', 3, 9),
-('2022-10-02', 'bayarnya nanti dirumah yah', 7, 9),
-('2022-11-10', 'packing harus aman', 8, 9),
-('2022-10-10', 'harus aman', 5, 1),
-('2022-10-05', 'segera di proses', 8, 3),
-('2022-11-10', 'segera di proses mau di pake besok', 4, 5),
-('2022-10-01', 'segera proses', 2, 1),
-('2022-11-10', 'packing kayu', 4, 1),
-('2022-11-10', 'segera proses', 6, 5);
+insert into transaction (tanggal_transaksi, keterangan, total_harga, customer_id, product_id) values
+('2022-10-01', 'belum bayar', 78900 , 1, 9),
+('2022-10-01', 'packing harus rapih', 55000 ,1, 5),
+('2022-10-01', 'mohon segera dikirim ya', 22000 ,4, 9),
+('2022-10-01', 'jangan lupa packing harus aman', 35000 ,3, 9),
+('2022-10-02', 'bayarnya nanti dirumah yah', 25000 ,7, 9),
+('2022-11-10', 'packing harus aman', 58000 ,8, 9),
+('2022-10-10', 'harus aman', 99000, 5, 1),
+('2022-10-05', 'segera di proses', 34000, 8, 3),
+('2022-11-10', 'segera di proses mau di pake besok', 21000, 4, 5),
+('2022-10-01', 'segera proses', 76000, 2, 1),
+('2022-11-10', 'packing kayu', 67000 ,4, 1),
+('2022-11-10', 'segera proses', 43000 ,6, 5);
 
 -- data pembayaran --
 insert into payment (transaction_id, pilih_bayar, tanggal_bayar, total_bayar) values

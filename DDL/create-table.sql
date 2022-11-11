@@ -44,12 +44,15 @@ create table transaction(
 	id int not null auto_increment,
     tanggal_transaksi date,
     keterangan text,
+    total_harga decimal (10,2) not null,
     customer_id int not null,
     product_id int not null,
     primary key(id),
     foreign key (customer_id) references customer(id),
     foreign key (product_id) references product(id)
 );
+
+drop table transaction;
 
 -- create table payment--
 create table payment(
